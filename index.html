@@ -566,7 +566,10 @@
         //This is an array of arrays, as indicated by the square brackets inside square brackets
         var data = new google.visualization.DataTable();
         data.addColumn('string', 'Topping');
-        data.addColumn('number', 'Slices');
+        //Changed descriptor for 'number' to GDP (from 'Slices')
+        data.addColumn('number', 'GDP');
+        //Inserted myGDPArray in data.addRows function by way of instruction to pull info for the Rows from myGDPArray 
+        //myGDPArray is the var created earlier for the 'big' array
         data.addRows(myGDPArray);
 
         // Set chart options to reflect new data set

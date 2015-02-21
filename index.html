@@ -537,14 +537,28 @@
       function drawChart() {
 
 		//Created var for my 'big' array
+		
 		var myGDPArray = [];
+		
+		var myFredObs = FredGDPData.observations
 		
 		
 		//Created 'for' loop in order to pull the information I need from FredGDPData observations for my array of arrays
+		
 		for (var i=0; i<FredGDPData.observations.length; i ++) {
 			console.log (FredGDPData.observations [i]);
 			
+			//Created new var for my 'little' array - i.e. the arrays within my 'big' array
+						
+			var myItem = [];
 			
+			//Gave instruction to push "date" and "value", in that order, from myFredObs to myGDPArray
+			
+			myItem.push(myFredObs [i].date);
+			myItem.push(myFredObs [i].value);
+			myGDPArray.push(myItem);
+			
+			console.log (myGDPArray);
 			
 		}
 

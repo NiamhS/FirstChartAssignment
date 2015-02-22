@@ -1,3 +1,5 @@
+//Separate 'factored out file' for Fred Data
+
 var FredGDPData = {
     "realtime_start": "2013-08-14",
     "realtime_end": "2013-08-14",

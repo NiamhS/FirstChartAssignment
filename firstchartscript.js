@@ -52,8 +52,8 @@
         // Set chart options to reflect new data set
         
         var options = {'title':'Annual GDP for the US',
-                       'width':400,
-                       'height':300};
+                       'width':500,
+                       'height':350};
 
         // Instantiate and draw our chart, passing in some options.
         //Changed Pie Chart to Column Chart

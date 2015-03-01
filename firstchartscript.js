@@ -73,7 +73,7 @@
                        'hAxis':{} //end of hA
   
       };
-
+		options.vAxis = {}
 		options.hAxis.textStyle = myTextStyle;
 	
 			

@@ -23,8 +23,14 @@
                        'hAxis':{
                        	'title':'Years'
                        } //end of hAxis object
-  
+			                       
+  			
+  			
      }; // end of options variable
+     
+     	options.vAxis = {};
+		options.hAxis.textStyle = myTextStyle;
+		options.vAxis.textStyle = myTextStyle;
 
       // Load the Visualization API and the piechart package.
       google.load('visualization', '1.0', {'packages':['corechart']});
@@ -77,8 +83,7 @@
         // Set chart options to reflect new data set
         
         
-		options.vAxis = {}
-		options.hAxis.textStyle = myTextStyle;
+		
 	
 			
         // Instantiate and draw our chart, passing in some options.

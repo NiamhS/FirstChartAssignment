@@ -14,10 +14,14 @@
       		opacity: 0.8          // The transparency of the text.
 		};
 
+
+		// new var for manipulating gridlines
 		var myGridLinesColor = {color: 'red', count: 4};
 		
-		var myHAxisFormat = {format:'MMM y'};
+		//new var for manipulating date along hAxis -- could not get to work
+		var myHAxisFormat = {format:'MMM d, y'};
 		
+		// Set chart options to reflect new data set
 		var options = {'title':'Annual GDP for the US',
                        'width':500,
                        'height':350,
@@ -29,13 +33,13 @@
   			
      }; // end of options variable
      
-     	options.vAxis = {};
+     	options.vAxis = {'title':'GDP Level'};
 		options.hAxis.textStyle = myTextStyle;
 		options.vAxis.textStyle = myTextStyle;
 		
-		options.hAxis.gridlines = myGridLinesColor;
-		options.vAxis.gridlines = myGridLinesColor;
-		options.hAxis.format = myHAxisFormat;
+		options.hAxis.gridlines = myGridLinesColor; // this instructs hAxis gridlines to follow format contained within var myGridLinesColor
+		options.vAxis.gridlines = myGridLinesColor; // this instructs vAxis gridlines to follow format contained within var myGridlinesColor
+		options.hAxis.format = myHAxisFormat; //this instruction is not working - perhaps because data displays date as a string???
 		
       // Load the Visualization API and the piechart package.
       google.load('visualization', '1.0', {'packages':['corechart']});
@@ -66,7 +70,7 @@
 			
 			//Gave instruction to push "date" and "value", in that order, from myFredObs to myGDPArray
 			
-			myItem.push(myFredObs [i].date);
+			myItem.push(String(myFredObs [i].date));
 			myItem.push(Number(myFredObs [i].value));
 			myGDPArray.push(myItem);
 			
@@ -85,7 +89,7 @@
         //myGDPArray is the var created earlier for the 'big' array
         data.addRows(myGDPArray);
 
-        // Set chart options to reflect new data set
+        
         
         
 		

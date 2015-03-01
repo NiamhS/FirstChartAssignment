@@ -18,4 +18,6 @@
 }
 .col-md-6{
 	background-color: red;
-}
+} /*
+   * these unique properties modify the different-sized columns within my div rows
+   */

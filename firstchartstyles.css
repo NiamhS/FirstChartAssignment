@@ -5,11 +5,14 @@
 .myFirstChartClass {
 	background-color:e1e1e1;
 	border: 5px solid salmon;
-	font-family: Calibri;
-	
-	
-	
-
-	
-	
+	font-family: Calibri;	
+}
+.col-md-4{
+	background-color: yellow;
+}
+.col-md-1{
+	background-color: pink;
+}
+.col-md-8{
+	background-color: red;
 }

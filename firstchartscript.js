@@ -20,9 +20,11 @@
 		var options = {'title':'Annual GDP for the US',
                        'width':500,
                        'height':350,
-                       'hAxis':{} //end of hA
+                       'hAxis':{
+                       	'title':'Years'
+                       } //end of hAxis object
   
-      };
+     }; // end of options variable
 
       // Load the Visualization API and the piechart package.
       google.load('visualization', '1.0', {'packages':['corechart']});

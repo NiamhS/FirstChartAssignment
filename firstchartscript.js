@@ -16,6 +16,8 @@
 
 		var myGridLinesColor = {color: 'red', count: 4};
 		
+		var myHAxisFormat = {format:'MMM y'};
+		
 		var options = {'title':'Annual GDP for the US',
                        'width':500,
                        'height':350,
@@ -33,7 +35,8 @@
 		
 		options.hAxis.gridlines = myGridLinesColor;
 		options.vAxis.gridlines = myGridLinesColor;
-
+		options.hAxis.format = myHAxisFormat;
+		
       // Load the Visualization API and the piechart package.
       google.load('visualization', '1.0', {'packages':['corechart']});
 

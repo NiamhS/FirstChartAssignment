@@ -15,7 +15,7 @@
       		opacity: 0.8          // The transparency of the text.
 		};
 
-		var myGridLinesColor = {color: '#333', count: 4};
+		var myGridLinesColor = {color: 'red', count: 4};
 		
 		var options = {'title':'Annual GDP for the US',
                        'width':500,
@@ -31,6 +31,9 @@
      	options.vAxis = {};
 		options.hAxis.textStyle = myTextStyle;
 		options.vAxis.textStyle = myTextStyle;
+		
+		options.hAxis.gridlines = myGridLinesColor;
+		options.vAxis.gridlines = myGridLinesColor;
 
       // Load the Visualization API and the piechart package.
       google.load('visualization', '1.0', {'packages':['corechart']});

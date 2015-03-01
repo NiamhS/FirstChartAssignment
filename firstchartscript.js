@@ -16,6 +16,13 @@
 		};
 
 		var myGridLinesColor = {color: '#333', count: 4};
+		
+		var options = {'title':'Annual GDP for the US',
+                       'width':500,
+                       'height':350,
+                       'hAxis':{} //end of hA
+  
+      };
 
       // Load the Visualization API and the piechart package.
       google.load('visualization', '1.0', {'packages':['corechart']});
@@ -67,12 +74,7 @@
 
         // Set chart options to reflect new data set
         
-        var options = {'title':'Annual GDP for the US',
-                       'width':500,
-                       'height':350,
-                       'hAxis':{} //end of hA
-  
-      };
+        
 		options.vAxis = {}
 		options.hAxis.textStyle = myTextStyle;
 	

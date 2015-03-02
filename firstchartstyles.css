@@ -9,6 +9,7 @@
 }
 .col-md-4{
 	background-color: white;
+	border: 5px solid red;
 }
 .col-md-1{
 	background-color: white;
@@ -18,6 +19,7 @@
 }
 .col-md-6{
 	background-color: red;
+	border: 5px solid white;
 } /*
    * these unique properties modify the different-sized columns within my div rows
    */
